@@ -1,0 +1,161 @@
+ninja: Entering directory `/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86'
+[1/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/filterbank.c.o
+[2/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/fftwrap.c.o
+[3/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/buffer.c.o
+[4/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/kiss_fftr.c.o
+[5/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/kiss_fft.c.o
+[6/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/jitter.c.o
+[7/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/scal.c.o
+[8/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/resample.c.o
+[9/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/preprocess.c.o
+[10/14] Building C object echo/CMakeFiles/speexecho.dir/audio_echo.c.o
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:105:34: warning: comparison between pointer and integer ('int *' and 'int')
+            &context->enable_vad == *v;
+            ~~~~~~~~~~~~~~~~~~~~ ^  ~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:105:34: warning: equality comparison result unused [-Wunused-comparison]
+            &context->enable_vad == *v;
+            ~~~~~~~~~~~~~~~~~~~~~^~~~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:145:28: warning: passing 'const pthread_mutex_t *' to parameter of type 'pthread_mutex_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        pthread_mutex_lock(&(context->mutex));
+                           ^~~~~~~~~~~~~~~~~
+/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/pthread.h:218:41: note: passing argument to parameter '__mutex' here
+int pthread_mutex_lock(pthread_mutex_t* __mutex);
+                                        ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:147:46: warning: passing 'unsigned short *' to parameter of type 'const spx_int16_t *' (aka 'const short *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        speex_echo_cancellation(context->st, near, far, out);
+                                             ^~~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/include/speex/speex_echo.h:101:69: note: passing argument to parameter 'rec' here
+void speex_echo_cancellation(SpeexEchoState *st, const spx_int16_t *rec, const spx_int16_t *play, spx_int16_t *out);
+                                                                    ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:147:52: warning: passing 'unsigned short *' to parameter of type 'const spx_int16_t *' (aka 'const short *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        speex_echo_cancellation(context->st, near, far, out);
+                                                   ^~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/include/speex/speex_echo.h:101:93: note: passing argument to parameter 'play' here
+void speex_echo_cancellation(SpeexEchoState *st, const spx_int16_t *rec, const spx_int16_t *play, spx_int16_t *out);
+                                                                                            ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:147:57: warning: passing 'unsigned short *' to parameter of type 'spx_int16_t *' (aka 'short *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        speex_echo_cancellation(context->st, near, far, out);
+                                                        ^~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/include/speex/speex_echo.h:101:112: note: passing argument to parameter 'out' here
+void speex_echo_cancellation(SpeexEchoState *st, const spx_int16_t *rec, const spx_int16_t *play, spx_int16_t *out);
+                                                                                                               ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:148:57: warning: passing 'unsigned short *' to parameter of type 'spx_int16_t *' (aka 'short *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        int result = speex_preprocess_run(context->den, out);
+                                                        ^~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/include/speex/speex_preprocess.h:77:65: note: passing argument to parameter 'x' here
+int speex_preprocess_run(SpeexPreprocessState *st, spx_int16_t *x);
+                                                                ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:149:30: warning: passing 'const pthread_mutex_t *' to parameter of type 'pthread_mutex_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        pthread_mutex_unlock(&(context->mutex));
+                             ^~~~~~~~~~~~~~~~~
+/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/pthread.h:240:43: note: passing argument to parameter '__mutex' here
+int pthread_mutex_unlock(pthread_mutex_t* __mutex);
+                                          ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:158:24: warning: passing 'const pthread_mutex_t *' to parameter of type 'pthread_mutex_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    pthread_mutex_lock(&(context->mutex));
+                       ^~~~~~~~~~~~~~~~~
+/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/pthread.h:218:41: note: passing argument to parameter '__mutex' here
+int pthread_mutex_lock(pthread_mutex_t* __mutex);
+                                        ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:159:53: warning: passing 'unsigned short *' to parameter of type 'spx_int16_t *' (aka 'short *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    int result = speex_preprocess_run(context->den, near);
+                                                    ^~~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/include/speex/speex_preprocess.h:77:65: note: passing argument to parameter 'x' here
+int speex_preprocess_run(SpeexPreprocessState *st, spx_int16_t *x);
+                                                                ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:160:26: warning: passing 'const pthread_mutex_t *' to parameter of type 'pthread_mutex_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    pthread_mutex_unlock(&(context->mutex));
+                         ^~~~~~~~~~~~~~~~~
+/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/pthread.h:240:43: note: passing argument to parameter '__mutex' here
+int pthread_mutex_unlock(pthread_mutex_t* __mutex);
+                                          ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:166:28: warning: passing 'const pthread_mutex_t *' to parameter of type 'pthread_mutex_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        pthread_mutex_lock(&(context->mutex));
+                           ^~~~~~~~~~~~~~~~~
+/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/pthread.h:218:41: note: passing argument to parameter '__mutex' here
+int pthread_mutex_lock(pthread_mutex_t* __mutex);
+                                        ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:167:40: warning: passing 'unsigned short *' to parameter of type 'const spx_int16_t *' (aka 'const short *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        speex_echo_capture(context->st,near,out);
+                                       ^~~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/include/speex/speex_echo.h:112:64: note: passing argument to parameter 'rec' here
+void speex_echo_capture(SpeexEchoState *st, const spx_int16_t *rec, spx_int16_t *out);
+                                                               ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:167:45: warning: passing 'unsigned short *' to parameter of type 'spx_int16_t *' (aka 'short *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        speex_echo_capture(context->st,near,out);
+                                            ^~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/include/speex/speex_echo.h:112:82: note: passing argument to parameter 'out' here
+void speex_echo_capture(SpeexEchoState *st, const spx_int16_t *rec, spx_int16_t *out);
+                                                                                 ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:168:30: warning: passing 'const pthread_mutex_t *' to parameter of type 'pthread_mutex_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        pthread_mutex_unlock(&(context->mutex));
+                             ^~~~~~~~~~~~~~~~~
+/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/pthread.h:240:43: note: passing argument to parameter '__mutex' here
+int pthread_mutex_unlock(pthread_mutex_t* __mutex);
+                                          ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:176:28: warning: passing 'const pthread_mutex_t *' to parameter of type 'pthread_mutex_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        pthread_mutex_lock(&(context->mutex));
+                           ^~~~~~~~~~~~~~~~~
+/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/pthread.h:218:41: note: passing argument to parameter '__mutex' here
+int pthread_mutex_lock(pthread_mutex_t* __mutex);
+                                        ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:177:41: warning: passing 'unsigned short *' to parameter of type 'const spx_int16_t *' (aka 'const short *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        speex_echo_playback(context->st,far);
+                                        ^~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/include/speex/speex_echo.h:118:65: note: passing argument to parameter 'play' here
+void speex_echo_playback(SpeexEchoState *st, const spx_int16_t *play);
+                                                                ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c:178:30: warning: passing 'const pthread_mutex_t *' to parameter of type 'pthread_mutex_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        pthread_mutex_unlock(&(context->mutex));
+                             ^~~~~~~~~~~~~~~~~
+/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/pthread.h:240:43: note: passing argument to parameter '__mutex' here
+int pthread_mutex_unlock(pthread_mutex_t* __mutex);
+                                          ^
+18 warnings generated.
+[11/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/mdf.c.o
+[12/14] Building C object echo/CMakeFiles/speexecho.dir/echo_jni.c.o
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/echo_jni.c:96:42: warning: incompatible pointer types passing 'jbyte *' (aka 'signed char *') to parameter of type 'unsigned short *' [-Wincompatible-pointer-types]
+        result= echo_sync_process(&echo, nearData, fearData, outData, echo.frame_size);
+                                         ^~~~~~~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/include/audio_echo.h:76:64: note: passing argument to parameter 'near' here
+int echo_sync_process(const SpeexEcho* context,unsigned short* near,unsigned short* far, unsigned short* out,size_t size);
+                                                               ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/echo_jni.c:96:52: warning: incompatible pointer types passing 'jbyte *' (aka 'signed char *') to parameter of type 'unsigned short *' [-Wincompatible-pointer-types]
+        result= echo_sync_process(&echo, nearData, fearData, outData, echo.frame_size);
+                                                   ^~~~~~~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/include/audio_echo.h:76:85: note: passing argument to parameter 'far' here
+int echo_sync_process(const SpeexEcho* context,unsigned short* near,unsigned short* far, unsigned short* out,size_t size);
+                                                                                    ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/echo_jni.c:96:62: warning: incompatible pointer types passing 'jbyte *' (aka 'signed char *') to parameter of type 'unsigned short *' [-Wincompatible-pointer-types]
+        result= echo_sync_process(&echo, nearData, fearData, outData, echo.frame_size);
+                                                             ^~~~~~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/include/audio_echo.h:76:106: note: passing argument to parameter 'out' here
+int echo_sync_process(const SpeexEcho* context,unsigned short* near,unsigned short* far, unsigned short* out,size_t size);
+                                                                                                         ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/echo_jni.c:100:42: warning: incompatible pointer types passing 'jbyte *' (aka 'signed char *') to parameter of type 'unsigned short *' [-Wincompatible-pointer-types]
+        result = echo_denoise_only(&echo,nearData);
+                                         ^~~~~~~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/include/audio_echo.h:78:64: note: passing argument to parameter 'near' here
+int echo_denoise_only(const SpeexEcho* context,unsigned short* near);
+                                                               ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/echo_jni.c:157:38: warning: incompatible pointer types passing 'jbyte *' (aka 'signed char *') to parameter of type 'unsigned short *' [-Wincompatible-pointer-types]
+        echo_asyn_process_near(&echo,nearData,out);
+                                     ^~~~~~~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/include/audio_echo.h:81:69: note: passing argument to parameter 'near' here
+int echo_asyn_process_near(const SpeexEcho* context,unsigned short* near,unsigned short *out);
+                                                                    ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/echo_jni.c:157:47: warning: passing 'short *' to parameter of type 'unsigned short *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        echo_asyn_process_near(&echo,nearData,out);
+                                              ^~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/include/audio_echo.h:81:90: note: passing argument to parameter 'out' here
+int echo_asyn_process_near(const SpeexEcho* context,unsigned short* near,unsigned short *out);
+                                                                                         ^
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/echo_jni.c:172:37: warning: incompatible pointer types passing 'jbyte *' (aka 'signed char *') to parameter of type 'unsigned short *' [-Wincompatible-pointer-types]
+        echo_asyn_process_far(&echo,nearData);
+                                    ^~~~~~~~
+/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/include/audio_echo.h:83:68: note: passing argument to parameter 'far' here
+int echo_asyn_process_far(const SpeexEcho* context,unsigned short* far);
+                                                                   ^
+7 warnings generated.
+[13/14] Building C object echo/CMakeFiles/speexecho.dir/__/speexdsp/libspeexdsp/smallft.c.o
+[14/14] Linking C shared library /Users/vnetoo/Speex_ECHO/app/libs/x86/libspeexecho.so

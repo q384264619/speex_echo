@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/vnetoo/Library/Android/android-ndk-r20/build/cmake/platforms.cmake",
+    "/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/CMakeLists.txt",
+    "/Users/vnetoo/Library/Android/android-ndk-r20/build/cmake/android.toolchain.cmake",
+    "/Users/vnetoo/Speex_ECHO/app/src/main/jni/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/vnetoo/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/vnetoo/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "speexecho-DEBUG-x86": {
+      "artifactName": "speexecho",
+      "buildCommand": "/Users/vnetoo/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86\" speexecho",
+      "abi": "x86",
+      "output": "/Users/vnetoo/Speex_ECHO/app/libs/x86/libspeexecho.so"
+    }
+  }
+}

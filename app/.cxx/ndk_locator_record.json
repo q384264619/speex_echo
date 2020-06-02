@@ -1,0 +1,37 @@
+{
+  "ndkFolder": "/Users/vnetoo/Library/Android/android-ndk-r20",
+  "messages": [
+    {
+      "level": "INFO",
+      "message": "android.ndkVersion from module build.gradle is not set"
+    },
+    {
+      "level": "INFO",
+      "message": "ndk.dir in local.properties is /Users/vnetoo/Library/Android/android-ndk-r20"
+    },
+    {
+      "level": "INFO",
+      "message": "ANDROID_NDK_HOME environment variable is not set"
+    },
+    {
+      "level": "INFO",
+      "message": "sdkFolder is /Users/vnetoo/Library/Android/sdk"
+    },
+    {
+      "level": "INFO",
+      "message": "NDK side-by-side folder from sdkFolder /Users/vnetoo/Library/Android/sdk/ndk does not exist"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/vnetoo/Library/Android/android-ndk-r20 by ndk.dir"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/vnetoo/Library/Android/sdk/ndk-bundle in SDK ndk-bundle folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Found requested ndk.dir (/Users/vnetoo/Library/Android/android-ndk-r20) which has version 20.0.5594570"
+    }
+  ]
+}

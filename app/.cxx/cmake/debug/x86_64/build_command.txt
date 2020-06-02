@@ -1,0 +1,20 @@
+Executable : /Users/vnetoo/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+-H/Users/vnetoo/Speex_ECHO/app/src/main/jni
+-DCMAKE_BUILD_TYPE=Debug
+-DCMAKE_TOOLCHAIN_FILE=/Users/vnetoo/Library/Android/android-ndk-r20/build/cmake/android.toolchain.cmake
+-DANDROID_ABI=x86_64
+-DANDROID_NDK=/Users/vnetoo/Library/Android/android-ndk-r20
+-DANDROID_PLATFORM=android-21
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DCMAKE_ANDROID_NDK=/Users/vnetoo/Library/Android/android-ndk-r20
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/vnetoo/Speex_ECHO/app/build/intermediates/cmake/debug/obj/x86_64
+-DCMAKE_MAKE_PROGRAM=/Users/vnetoo/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=21
+-B/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86_64
+-GNinja
+jvmArgs : 
+
+Build command args:

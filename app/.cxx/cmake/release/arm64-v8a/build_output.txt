@@ -1,0 +1,20 @@
+Check for working C compiler: /Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang
+Check for working C compiler: /Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works
+Detecting C compiler ABI info
+Detecting C compiler ABI info - done
+Detecting C compile features
+Detecting C compile features - done
+Check for working CXX compiler: /Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
+Check for working CXX compiler: /Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works
+Detecting CXX compiler ABI info
+Detecting CXX compiler ABI info - done
+Detecting CXX compile features
+Detecting CXX compile features - done
+Project:SpeexEcho
+Project Dir:/Users/vnetoo/Speex_ECHO/app/src/main/jni
+Current source dir:/Users/vnetoo/Speex_ECHO/app/src/main/jni
+cross-os:
+compile-c:1
+sourceFiles:../speexdsp/libspeexdsp/buffer.c;../speexdsp/libspeexdsp/fftwrap.c;../speexdsp/libspeexdsp/filterbank.c;../speexdsp/libspeexdsp/jitter.c;../speexdsp/libspeexdsp/kiss_fft.c;../speexdsp/libspeexdsp/kiss_fftr.c;../speexdsp/libspeexdsp/mdf.c;../speexdsp/libspeexdsp/preprocess.c;../speexdsp/libspeexdsp/resample.c;../speexdsp/libspeexdsp/scal.c;../speexdsp/libspeexdsp/smallft.c
+SpeexEcho sourceFiles:/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c;/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/echo_jni.c
+Configuring done

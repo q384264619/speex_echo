@@ -1,0 +1,7 @@
+Executable : /Users/vnetoo/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86
+speexecho
+jvmArgs : 
+

@@ -1,0 +1,103 @@
+{
+  "stringTable": {
+    "0": "/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/release/x86",
+    "1": "--target=i686-none-linux-android21 --gcc-toolchain=/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dspeexecho_EXPORTS -I/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/./include -I/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/./../logs -I/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/include -I/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/include/speex -I/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/../speexdsp/libspeexdsp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -D HAVE_CONFIG_H"
+  },
+  "buildFiles": [
+    "/Users/vnetoo/Library/Android/android-ndk-r20/build/cmake/platforms.cmake",
+    "/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/CMakeLists.txt",
+    "/Users/vnetoo/Library/Android/android-ndk-r20/build/cmake/android.toolchain.cmake",
+    "/Users/vnetoo/Speex_ECHO/app/src/main/jni/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/vnetoo/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/release/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/vnetoo/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/release/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "speexecho-DEBUG-x86": {
+      "buildCommand": "/Users/vnetoo/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/release/x86\" speexecho",
+      "buildType": "release",
+      "toolchain": "1775821985",
+      "abi": "x86",
+      "artifactName": "speexecho",
+      "files": [
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/buffer.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/fftwrap.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/filterbank.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/jitter.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/kiss_fft.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/kiss_fftr.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/mdf.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/preprocess.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/resample.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/scal.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/speexdsp/libspeexdsp/smallft.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/audio_echo.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/vnetoo/Speex_ECHO/app/src/main/jni/echo/echo_jni.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/vnetoo/Speex_ECHO/app/libs/x86/libspeexecho.so"
+    }
+  },
+  "toolchains": {
+    "1775821985": {
+      "cCompilerExecutable": "/Users/vnetoo/Library/Android/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

@@ -1,0 +1,5 @@
+/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86/echo/CMakeFiles/rebuild_cache.dir
+/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86/echo/CMakeFiles/edit_cache.dir
+/Users/vnetoo/Speex_ECHO/app/.cxx/cmake/debug/x86/echo/CMakeFiles/speexecho.dir
